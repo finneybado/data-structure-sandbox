@@ -11,19 +11,19 @@ public class Node<T> {
     }
 
     // getters and setters
-    T getData() {
+    public T getData() {
         return this.data;
     }
 
-    void setData(T newData) {
+    public void setData(T newData) {
         this.data = newData;
     }
 
-    Node<T> getNext() {
+    public Node<T> getNext() {
         return this.next;
     }
 
-    void setNext(Node<T> node) {
+    public void setNext(Node<T> node) {
         this.next = node;
     }
 }
