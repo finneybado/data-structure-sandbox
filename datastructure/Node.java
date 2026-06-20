@@ -10,7 +10,7 @@ public class Node<T> {
         this.next = null;
     }
 
-    // getters and setters to add
+    // getters and setters
     T getData() {
         return this.data;
     }
