@@ -1,8 +1,8 @@
 public class Node<T> {
 
     // fields
-    T data;
-    Node<T> next;
+    private T data;
+    private Node<T> next;
 
     // Constructor
     public Node(T data) {
@@ -11,4 +11,19 @@ public class Node<T> {
     }
 
     // getters and setters to add
+    T getData() {
+        return this.data;
+    }
+
+    void setData(T newData) {
+        this.data = newData;
+    }
+
+    Node<T> getNext() {
+        return this.next;
+    }
+
+    void setNext(Node<T> node) {
+        this.next = node;
+    }
 }
