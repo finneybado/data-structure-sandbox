@@ -19,11 +19,22 @@ public class LinkedList{
         return this.size;
     }
 
-    public void incrementSize
+    private void incrementSize(){
+        this.size++;
+    }
+
+    private void decrementSize(){
+        this.size--;
+    }
+
 
     // main interface
-    public void insert(Node<T> node,int index){
+    public void insertNode(Node<T> node,int index){
 
+    }
+
+    public void addNode(Node<T> node,int index){
+        <>
     }
 
     public T getNode(int index){
@@ -37,9 +48,6 @@ public class LinkedList{
     public T removeNode(int index){
 
     }
-
-    public void increment
-
 
 
 
