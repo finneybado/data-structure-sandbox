@@ -84,10 +84,39 @@ public class LinkedList{
     }
 
     public T getNode(int index){
+        if (index<0 || index>=size()){
+            System.out.println(">>invalid index : out of bounds");
+        }else{
+            if (index == 0){
+                return getHead.getData();
+            }else{
+                Node<T> tracker = getHead();
+                for (int _==0;_<index;_++){
+                    tracker = tracker.getNext();
+                }
+
+                return tracker.getData();
+            }
+        }
 
     }
 
     public void setNode(T data,int index){
+        if (index<0 || index>=size()){
+            System.out.println(">>invalid index : out of bounds");
+        }else{
+            if (index == 0){
+                Node<T> temp = getHead();
+                temp.setData(data);
+            }else{
+                Node<T> tracker = getHead();
+                for (int _==0;_<index;_++){
+                    tracker = tracker.getNext();
+                }
+
+                tracker.setData(data);
+            }
+        }
 
     }
 
