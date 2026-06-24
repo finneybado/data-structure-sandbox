@@ -45,6 +45,8 @@ public class LinkedList{
             temp.setNext(head.getNext());
             setHead(temp);
 
+            incrementSize();
+
         }else if( index<0 ||index >=this.size()){
             System.out.println(">> invalid index : out of bounds ")
         }else{
@@ -58,10 +60,12 @@ public class LinkedList{
                 }
 
                 if (secondTracker == null){
-
+                    fisrtTracker.setNext(new Node(data));
+                }else {
+                    firstTracker.setNext(new Node(data));
+                    firstTracker.getNext().setNext(secondTracker);
                 }
 
-                tracker.setNext(new Node(data));
                 incrementSize();
         }
 
