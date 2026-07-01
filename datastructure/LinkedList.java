@@ -124,10 +124,6 @@ public class LinkedList{
 
     }
 
-    public String stringConverter(T data){
-
-    }
-
     public void display(){
         // [1]->(2)->(3)
         if (size()==0){
@@ -135,7 +131,12 @@ public class LinkedList{
         }else if (size()==1){
             System.out.println("[" + head.getData.toString() +"]");
     }else{
-
+        Node<T> tracker = head;
+        System.out.print("[" + tracker.getData.toString() +"]");
+        for (int _= 1;_<size();_++){
+            tracker = tracker.getNext();
+            System.out.print("->(" + tracker.getData.toString() +")");
+        }
     }
     }
 
