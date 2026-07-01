@@ -124,6 +124,21 @@ public class LinkedList{
 
     }
 
+    public String stringConverter(T data){
+
+    }
+
+    public void display(){
+        // [1]->(2)->(3)
+        if (size()==0){
+            System.out.println("[NIL]");
+        }else if (size()==1){
+            System.out.println("[" + head.getData.toString() +"]");
+    }else{
+
+    }
+    }
+
 
 
 }
